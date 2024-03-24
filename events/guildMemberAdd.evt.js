@@ -28,17 +28,18 @@ export async function execute(newGuildMember, client) {
       await newGuildMember.ban(`Unverified bot`);
     }
   }
-  if (newGuildMember.guild.id == "1219365219294253146") {
-    const mainserver = client.guilds.cache.get("1218760325533532171");
-    if (!mainserver) return;
-    if (!await mainserver.members.cache.get(newGuildMember.id)) {
-        const e = [{
-            title: "Kicked",
-            description: `You were kicked from the public services server for not being in the main server.`,
-        }]
-        await newGuildMember.send({ embeds: e });
-        await newGuildMember.kick("Not in main server");
+  if (newGuildMember.guild.id == "1218760325533532171") {
+    const joinRole = newGuildMember.guild.roles.cache.get("1218763059875676241");
+    const civ_role = newGuildMember.guild.roles.cache.get("1218761191615107192");
+    if (!civ_role) return;
+    if (!joinRole) return;
+    newGuildMember.roles.add(joinRole);
+    newGuildMember.roles.add(civ_role);
 
-    }
+  } else if (newGuildMember.guild.id == "1221464124437954580") {
+    const joinRole = newGuildMember.guild.roles.cache.get("1221464124437954582");
+    if (!joinRole) return;
+    newGuildMember.roles.add(joinRole);
+
   }
 }
