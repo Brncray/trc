@@ -11,7 +11,8 @@ config();
     client.settings = {
         color: 0x121212, // put color hex here for embeds n shit wo #
         iconURL: '',
-        reports_channel: '1218761965728432170'
+        reports_channel: '1218761965728432170',
+        channel: '1219998541963989002'
     };
     await client.init();
 })();

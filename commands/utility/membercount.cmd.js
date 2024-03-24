@@ -18,10 +18,8 @@ export async function execute(interaction, client) {
   /**@type {import("discord.js").APIEmbed[]} */
   const embed = [
     {
+      title: "Members",
       description: memberCount,
-      footer: {
-        text: "Member Count",
-      },
       timestamp: new Date(),
     },
   ];
