@@ -17,7 +17,7 @@ export async function execute(interaction, client) {
 
   await interaction.channel?.send({
     content:
-      "Setting up! Public Services may ping the host in <#1152820015054192700>. Server Boosters may ping the host in <#1211487878538985492> ⁠for early access. Staff may now join.",
+      "Setting up! Public Services may ping the host in <#1218943438536577075>. Server Boosters may ping the host in <#1218761867472797746> ⁠for early access. Staff may now join.",
   });
 
   await interaction.deleteReply();
