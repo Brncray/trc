@@ -25,4 +25,5 @@ export async function execute(interaction, client) {
       timestamp: new Date(),
     },
   ];
+    await interaction.editReply({ embeds: embed });
 }
