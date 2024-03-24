@@ -44,7 +44,7 @@ export async function execute(interaction, client) {
   const response = [
     {
       title: "Infraction",
-      description: `\n> Hello ${user}, you have received an infraction within Greenville Roleplay Community for \`\`${reason}\`\`. \n\n > Evidence: \`\`${evidence}\`\` \n\n> Signed, ${interaction.user}.`,
+      description: `\n> Hello ${user}, you have received an infraction within Centreville for \`\`${reason}\`\`. \n\n > Evidence: \`\`${evidence}\`\` \n\n> Signed, ${interaction.user}.`,
       color: client.settings.color,
     },
   ];
