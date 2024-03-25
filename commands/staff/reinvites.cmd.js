@@ -38,6 +38,7 @@ export const data = {
  */
 export async function execute(interaction, client) {
   await interaction.deferReply({});
+  if (!interaction.member.roles.cache.has(client.settings.staff_role)) return interaction.editReply({ content: "You do not have permission to use this command.", ephemeral: true });
   if (interaction.options.get("peacetime").value.toLowerCase() == "normal") {
     var pt = "Normal";
     var frp = 80;

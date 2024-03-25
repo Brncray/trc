@@ -12,7 +12,8 @@ config();
         color: 0x121212, // put color hex here for embeds n shit wo #
         iconURL: '',
         reports_channel: '1218761965728432170',
-        channel: '1219998541963989002'
+        channel: '1219998541963989002',
+        staff_role: '1219664764666642505'
     };
     await client.init();
 })();

@@ -13,6 +13,7 @@ export const data = {
  */
 export async function execute(interaction, client) {
   await interaction.deferReply({ ephemeral: true });
+  if (!interaction.member.roles.cache.has(client.settings.staff_role)) return interaction.editReply({ content: "You do not have permission to use this command.", ephemeral: true });
 
 
   await interaction.channel?.send({
