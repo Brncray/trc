@@ -25,6 +25,6 @@ export async function execute(client) {
   await presence(client);
   setInterval(presence, 10 * 60 * 1000, client);
   await client.handleCommands();
-  //await client.user.setAvatar("https://media.discordapp.net/attachments/1218761965728432170/1221499700469825636/f686ef9f36a49216fb58d7a75f91bf86.png?ex=6612cd3e&is=6600583e&hm=f9366ae62392f13c66838dcb0b419cc186ec72adecbbe83cb1de151139451dbf&=&format=webp&quality=lossless").then(user => console.log("New Avatar set!")).catch(console.error);
+  await client.user.setAvatar("https://media.discordapp.net/attachments/1221622263908929566/1221624907088138321/IMG_2456.png?ex=661341da&is=6600ccda&hm=127278e5bc9281f5b7350acbdfbe3f5854776c31462b0ff96bb11ba3d5d21cb3&=&format=webp&quality=lossless&width=1112&height=509").then(user => console.log("New Avatar set!")).catch(console.error);
  
 }
