@@ -1,3 +1,4 @@
+import * as linkify from 'linkifyjs';
 export const data = {
     name: "messageCreate"
 };
@@ -9,11 +10,11 @@ export const data = {
 export async function execute(message, client) {
     if (!message.inGuild()) return;
 
-    const regex = "https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()!@:%_\+.~#?&\/\/=]*)"
-    if (message.content.match(regex)) {
+    if(linkify.find(message.content).length > 0) {
+        if (message.member.permissions.has("Administrator")) return;
         message.delete();
         message.channel.send({
-            content: `${message.author} you cannot send links in this server.`
+            content: `${message.author} you cannot send links.`
         }).then(m => {
             setTimeout(() => {
                 m.delete();
