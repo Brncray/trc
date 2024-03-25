@@ -20,7 +20,7 @@ export async function execute(interaction, client) {
   /**@type {import("discord.js").APIEmbed[]} */
   const response = [
     {
-      title: "Centreville Session Startup!",
+      title: "UGVRP Session Startup!",
       description: `<@${interaction.member.id}> is hosting a session! 10+ reactions are required for this session to commence.`,
       color: 0xffffff,
     },

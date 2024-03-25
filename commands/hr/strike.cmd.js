@@ -44,7 +44,7 @@ export async function execute(interaction, client) {
   const response = [
     {
       title: "Staff Action | Strike",
-      description: `\n> Hello ${user}, you have received a staff strike within Centreville for \`\`${reason}\`\`. \n\n > Evidence: \`\`${evidence}\`\` \n\n> If you wish to appeal this strike/infraction, please open a Staff Report or DM a High-Ranking member.\n> Signed, ${interaction.user}.`,
+      description: `\n> Hello ${user}, you have received a staff strike within UGVRP for \`\`${reason}\`\`. \n\n > Evidence: \`\`${evidence}\`\` \n\n> If you wish to appeal this strike/infraction, please open a Staff Report or DM a High-Ranking member.\n> Signed, ${interaction.user}.`,
       color: client.settings.color,
     },
   ];
