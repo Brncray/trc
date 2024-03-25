@@ -13,6 +13,7 @@ export async function execute(message, client) {
     const linkCheck = linkify.find(message.content);
     if(linkCheck.length > 0) {
         if (message.member.permissions.has("Administrator")) return;
+        if (message.channel.id === "1221572103485259906") return; 
         // check if the link has a roblox.com domain
         console.log(linkCheck.length)
         if (linkCheck[0].value.includes("roblox.com") && linkCheck.length === 1) return;
