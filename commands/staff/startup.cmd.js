@@ -23,7 +23,7 @@ export async function execute(interaction, client) {
   const response = [
     {
       title: "UGVRP Session Startup!",
-      description: `<@${interaction.member.id}> is hosting a session! 10+ reactions are required for this session to commence.`,
+      description: `<@${interaction.member.id}> is hosting a session! 5+ reactions are required for this session to commence.`,
       color: 0xffffff,
     },
   ];
